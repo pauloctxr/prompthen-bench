@@ -1,158 +1,158 @@
 model_run,environment,format,correct,total,accuracy_pct
-DeepSeek v4-flash · API,Direct API,ntc,35,75,46.7
-DeepSeek v4-flash · API,Direct API,md_en,36,75,48.0
-DeepSeek v4-flash · API,Direct API,md_pt,40,75,53.3
-DeepSeek v4-flash · API,Direct API,yaml_en,35,75,46.7
-DeepSeek v4-flash · API,Direct API,yaml_pt,35,75,46.7
-DeepSeek v4-flash · API,Direct API,xml_en,40,75,53.3
-DeepSeek v4-flash · API,Direct API,xml_pt,33,75,44.0
-DeepSeek v4-pro · API,Direct API,ntc,43,75,57.3
-DeepSeek v4-pro · API,Direct API,md_en,39,75,52.0
-DeepSeek v4-pro · API,Direct API,md_pt,37,75,49.3
-DeepSeek v4-pro · API,Direct API,yaml_en,40,75,53.3
-DeepSeek v4-pro · API,Direct API,yaml_pt,40,75,53.3
-DeepSeek v4-pro · API,Direct API,xml_en,42,75,56.0
-DeepSeek v4-pro · API,Direct API,xml_pt,37,75,49.3
+DeepSeek v4-flash · Direct API,Direct API,ntc,35,75,46.7
+DeepSeek v4-flash · Direct API,Direct API,md_en,36,75,48.0
+DeepSeek v4-flash · Direct API,Direct API,md_pt,40,75,53.3
+DeepSeek v4-flash · Direct API,Direct API,yaml_en,35,75,46.7
+DeepSeek v4-flash · Direct API,Direct API,yaml_pt,35,75,46.7
+DeepSeek v4-flash · Direct API,Direct API,xml_en,40,75,53.3
+DeepSeek v4-flash · Direct API,Direct API,xml_pt,33,75,44.0
+DeepSeek v4-pro · Direct API,Direct API,ntc,43,75,57.3
+DeepSeek v4-pro · Direct API,Direct API,md_en,39,75,52.0
+DeepSeek v4-pro · Direct API,Direct API,md_pt,37,75,49.3
+DeepSeek v4-pro · Direct API,Direct API,yaml_en,40,75,53.3
+DeepSeek v4-pro · Direct API,Direct API,yaml_pt,40,75,53.3
+DeepSeek v4-pro · Direct API,Direct API,xml_en,42,75,56.0
+DeepSeek v4-pro · Direct API,Direct API,xml_pt,37,75,49.3
 Fable 5 · Claude Code,CLI Harness,ntc,50,75,66.7
 Fable 5 · Claude Code,CLI Harness,md_en,49,75,65.3
-Fable 5 · Claude Code,CLI Harness,md_pt,37,55,67.3
-Fable 5 · Claude Code,CLI Harness,yaml_en,44,68,64.7
-Fable 5 · Claude Code,CLI Harness,yaml_pt,44,69,63.8
-Fable 5 · Claude Code,CLI Harness,xml_en,39,67,58.2
-Fable 5 · Claude Code,CLI Harness,xml_pt,50,73,68.5
-GLM 5.2 · API stream,Direct API,ntc,37,75,49.3
-GLM 5.2 · API stream,Direct API,md_en,38,75,50.7
-GLM 5.2 · API stream,Direct API,md_pt,43,75,57.3
-GLM 5.2 · API stream,Direct API,yaml_en,31,75,41.3
-GLM 5.2 · API stream,Direct API,yaml_pt,42,75,56.0
-GLM 5.2 · API stream,Direct API,xml_en,42,75,56.0
-GLM 5.2 · API stream,Direct API,xml_pt,42,75,56.0
-GPT-5.4 mini · codex,CLI Harness,ntc,46,75,61.3
-GPT-5.4 mini · codex,CLI Harness,md_en,44,75,58.7
-GPT-5.4 mini · codex,CLI Harness,md_pt,47,75,62.7
-GPT-5.4 mini · codex,CLI Harness,yaml_en,37,75,49.3
-GPT-5.4 mini · codex,CLI Harness,yaml_pt,46,75,61.3
-GPT-5.4 mini · codex,CLI Harness,xml_en,49,75,65.3
-GPT-5.4 mini · codex,CLI Harness,xml_pt,46,75,61.3
-GPT-5.5 · codex,CLI Harness,ntc,39,75,52.0
-GPT-5.5 · codex,CLI Harness,md_en,32,75,42.7
-GPT-5.5 · codex,CLI Harness,md_pt,47,75,62.7
-GPT-5.5 · codex,CLI Harness,yaml_en,31,75,41.3
-GPT-5.5 · codex,CLI Harness,yaml_pt,35,75,46.7
-GPT-5.5 · codex,CLI Harness,xml_en,34,75,45.3
-GPT-5.5 · codex,CLI Harness,xml_pt,40,75,53.3
-GPT-5.6 luna · batch,Direct API,ntc,51,75,68.0
-GPT-5.6 luna · batch,Direct API,md_en,55,75,73.3
-GPT-5.6 luna · batch,Direct API,md_pt,52,75,69.3
-GPT-5.6 luna · batch,Direct API,yaml_en,53,75,70.7
-GPT-5.6 luna · batch,Direct API,yaml_pt,52,75,69.3
-GPT-5.6 luna · batch,Direct API,xml_en,52,75,69.3
-GPT-5.6 luna · batch,Direct API,xml_pt,50,75,66.7
-GPT-5.6 luna · codex,CLI Harness,ntc,46,75,61.3
-GPT-5.6 luna · codex,CLI Harness,md_en,50,75,66.7
-GPT-5.6 luna · codex,CLI Harness,md_pt,41,75,54.7
-GPT-5.6 luna · codex,CLI Harness,yaml_en,49,75,65.3
-GPT-5.6 luna · codex,CLI Harness,yaml_pt,51,75,68.0
-GPT-5.6 luna · codex,CLI Harness,xml_en,52,75,69.3
-GPT-5.6 luna · codex,CLI Harness,xml_pt,47,75,62.7
-GPT-5.6 sol · batch OFICIAL (2 rodadas),Direct API,ntc,52,75,69.3
-GPT-5.6 sol · batch OFICIAL (2 rodadas),Direct API,md_en,58,75,77.3
-GPT-5.6 sol · batch OFICIAL (2 rodadas),Direct API,md_pt,59,75,78.7
-GPT-5.6 sol · batch OFICIAL (2 rodadas),Direct API,yaml_en,51,75,68.0
-GPT-5.6 sol · batch OFICIAL (2 rodadas),Direct API,yaml_pt,54,75,72.0
-GPT-5.6 sol · batch OFICIAL (2 rodadas),Direct API,xml_en,49,75,65.3
-GPT-5.6 sol · batch OFICIAL (2 rodadas),Direct API,xml_pt,51,75,68.0
-GPT-5.6 sol · codex OFICIAL (2 rodadas),CLI Harness,ntc,59,75,78.7
-GPT-5.6 sol · codex OFICIAL (2 rodadas),CLI Harness,md_en,60,75,80.0
-GPT-5.6 sol · codex OFICIAL (2 rodadas),CLI Harness,md_pt,62,75,82.7
-GPT-5.6 sol · codex OFICIAL (2 rodadas),CLI Harness,yaml_en,57,75,76.0
-GPT-5.6 sol · codex OFICIAL (2 rodadas),CLI Harness,yaml_pt,54,75,72.0
-GPT-5.6 sol · codex OFICIAL (2 rodadas),CLI Harness,xml_en,58,75,77.3
-GPT-5.6 sol · codex OFICIAL (2 rodadas),CLI Harness,xml_pt,57,75,76.0
-GPT-5.6 terra · batch,Direct API,ntc,57,75,76.0
-GPT-5.6 terra · batch,Direct API,md_en,52,75,69.3
-GPT-5.6 terra · batch,Direct API,md_pt,58,75,77.3
-GPT-5.6 terra · batch,Direct API,yaml_en,52,75,69.3
-GPT-5.6 terra · batch,Direct API,yaml_pt,51,75,68.0
-GPT-5.6 terra · batch,Direct API,xml_en,59,75,78.7
-GPT-5.6 terra · batch,Direct API,xml_pt,54,75,72.0
-GPT-5.6 terra · codex,CLI Harness,ntc,50,75,66.7
-GPT-5.6 terra · codex,CLI Harness,md_en,48,75,64.0
-GPT-5.6 terra · codex,CLI Harness,md_pt,56,75,74.7
-GPT-5.6 terra · codex,CLI Harness,yaml_en,48,75,64.0
-GPT-5.6 terra · codex,CLI Harness,yaml_pt,58,75,77.3
-GPT-5.6 terra · codex,CLI Harness,xml_en,55,75,73.3
-GPT-5.6 terra · codex,CLI Harness,xml_pt,51,75,68.0
-Gemini 2.5 Flash-Lite think · batch,Direct API,ntc,5,75,6.7
-Gemini 2.5 Flash-Lite think · batch,Direct API,md_en,5,75,6.7
-Gemini 2.5 Flash-Lite think · batch,Direct API,md_pt,4,75,5.3
-Gemini 2.5 Flash-Lite think · batch,Direct API,yaml_en,5,75,6.7
-Gemini 2.5 Flash-Lite think · batch,Direct API,yaml_pt,6,75,8.0
-Gemini 2.5 Flash-Lite think · batch,Direct API,xml_en,11,75,14.7
-Gemini 2.5 Flash-Lite think · batch,Direct API,xml_pt,5,75,6.7
-Gemini 2.5 Pro r1 · batch,Direct API,ntc,20,75,26.7
-Gemini 2.5 Pro r1 · batch,Direct API,md_en,26,75,34.7
-Gemini 2.5 Pro r1 · batch,Direct API,md_pt,28,75,37.3
-Gemini 2.5 Pro r1 · batch,Direct API,yaml_en,24,75,32.0
-Gemini 2.5 Pro r1 · batch,Direct API,yaml_pt,32,75,42.7
-Gemini 2.5 Pro r1 · batch,Direct API,xml_en,24,75,32.0
-Gemini 2.5 Pro r1 · batch,Direct API,xml_pt,29,75,38.7
-Gemini 2.5 Pro r2 · batch,Direct API,ntc,20,75,26.7
-Gemini 2.5 Pro r2 · batch,Direct API,md_en,27,75,36.0
-Gemini 2.5 Pro r2 · batch,Direct API,md_pt,33,75,44.0
-Gemini 2.5 Pro r2 · batch,Direct API,yaml_en,21,75,28.0
-Gemini 2.5 Pro r2 · batch,Direct API,yaml_pt,26,75,34.7
-Gemini 2.5 Pro r2 · batch,Direct API,xml_en,25,75,33.3
-Gemini 2.5 Pro r2 · batch,Direct API,xml_pt,21,75,28.0
-Gemini 3 Flash · batch,Direct API,ntc,42,75,56.0
-Gemini 3 Flash · batch,Direct API,md_en,35,75,46.7
-Gemini 3 Flash · batch,Direct API,md_pt,37,75,49.3
-Gemini 3 Flash · batch,Direct API,yaml_en,42,75,56.0
-Gemini 3 Flash · batch,Direct API,yaml_pt,37,75,49.3
-Gemini 3 Flash · batch,Direct API,xml_en,38,75,50.7
-Gemini 3 Flash · batch,Direct API,xml_pt,36,75,48.0
-Gemini 3.1 Flash-Lite · batch,Direct API,ntc,6,75,8.0
-Gemini 3.1 Flash-Lite · batch,Direct API,md_en,5,75,6.7
-Gemini 3.1 Flash-Lite · batch,Direct API,md_pt,5,75,6.7
-Gemini 3.1 Flash-Lite · batch,Direct API,yaml_en,5,75,6.7
-Gemini 3.1 Flash-Lite · batch,Direct API,yaml_pt,5,75,6.7
-Gemini 3.1 Flash-Lite · batch,Direct API,xml_en,5,75,6.7
-Gemini 3.1 Flash-Lite · batch,Direct API,xml_pt,5,75,6.7
-Gemini 3.1 Pro · batch,Direct API,ntc,49,75,65.3
-Gemini 3.1 Pro · batch,Direct API,md_en,49,75,65.3
-Gemini 3.1 Pro · batch,Direct API,md_pt,47,75,62.7
-Gemini 3.1 Pro · batch,Direct API,yaml_en,49,75,65.3
-Gemini 3.1 Pro · batch,Direct API,yaml_pt,48,75,64.0
-Gemini 3.1 Pro · batch,Direct API,xml_en,46,75,61.3
-Gemini 3.1 Pro · batch,Direct API,xml_pt,53,75,70.7
-Gemini 3.5 Flash · batch,Direct API,ntc,45,75,60.0
-Gemini 3.5 Flash · batch,Direct API,md_en,38,75,50.7
-Gemini 3.5 Flash · batch,Direct API,md_pt,39,75,52.0
-Gemini 3.5 Flash · batch,Direct API,yaml_en,44,75,58.7
-Gemini 3.5 Flash · batch,Direct API,yaml_pt,41,75,54.7
-Gemini 3.5 Flash · batch,Direct API,xml_en,41,75,54.7
-Gemini 3.5 Flash · batch,Direct API,xml_pt,45,75,60.0
-Gemini 3.5 Flash-Lite think · batch,Direct API,ntc,34,75,45.3
-Gemini 3.5 Flash-Lite think · batch,Direct API,md_en,40,75,53.3
-Gemini 3.5 Flash-Lite think · batch,Direct API,md_pt,34,75,45.3
-Gemini 3.5 Flash-Lite think · batch,Direct API,yaml_en,37,75,49.3
-Gemini 3.5 Flash-Lite think · batch,Direct API,yaml_pt,34,75,45.3
-Gemini 3.5 Flash-Lite think · batch,Direct API,xml_en,40,75,53.3
-Gemini 3.5 Flash-Lite think · batch,Direct API,xml_pt,34,75,45.3
-Gemini 3.6 Flash · batch,Direct API,ntc,46,75,61.3
-Gemini 3.6 Flash · batch,Direct API,md_en,43,75,57.3
-Gemini 3.6 Flash · batch,Direct API,md_pt,43,75,57.3
-Gemini 3.6 Flash · batch,Direct API,yaml_en,48,75,64.0
-Gemini 3.6 Flash · batch,Direct API,yaml_pt,43,75,57.3
-Gemini 3.6 Flash · batch,Direct API,xml_en,46,75,61.3
-Gemini 3.6 Flash · batch,Direct API,xml_pt,46,75,61.3
-Grok 4.3 · batch,Direct API,ntc,30,75,40.0
-Grok 4.3 · batch,Direct API,md_en,36,75,48.0
-Grok 4.3 · batch,Direct API,md_pt,28,75,37.3
-Grok 4.3 · batch,Direct API,yaml_en,27,75,36.0
-Grok 4.3 · batch,Direct API,yaml_pt,32,75,42.7
-Grok 4.3 · batch,Direct API,xml_en,34,75,45.3
-Grok 4.3 · batch,Direct API,xml_pt,25,75,33.3
+Fable 5 · Claude Code,CLI Harness,md_pt,37,75,49.3
+Fable 5 · Claude Code,CLI Harness,yaml_en,44,75,58.7
+Fable 5 · Claude Code,CLI Harness,yaml_pt,44,75,58.7
+Fable 5 · Claude Code,CLI Harness,xml_en,39,75,52.0
+Fable 5 · Claude Code,CLI Harness,xml_pt,50,75,66.7
+GLM 5.2 · Direct API,Direct API,ntc,37,75,49.3
+GLM 5.2 · Direct API,Direct API,md_en,38,75,50.7
+GLM 5.2 · Direct API,Direct API,md_pt,43,75,57.3
+GLM 5.2 · Direct API,Direct API,yaml_en,31,75,41.3
+GLM 5.2 · Direct API,Direct API,yaml_pt,42,75,56.0
+GLM 5.2 · Direct API,Direct API,xml_en,42,75,56.0
+GLM 5.2 · Direct API,Direct API,xml_pt,42,75,56.0
+GPT-5.4 mini · Codex CLI,CLI Harness,ntc,46,75,61.3
+GPT-5.4 mini · Codex CLI,CLI Harness,md_en,44,75,58.7
+GPT-5.4 mini · Codex CLI,CLI Harness,md_pt,47,75,62.7
+GPT-5.4 mini · Codex CLI,CLI Harness,yaml_en,37,75,49.3
+GPT-5.4 mini · Codex CLI,CLI Harness,yaml_pt,46,75,61.3
+GPT-5.4 mini · Codex CLI,CLI Harness,xml_en,49,75,65.3
+GPT-5.4 mini · Codex CLI,CLI Harness,xml_pt,46,75,61.3
+GPT-5.5 · Codex CLI,CLI Harness,ntc,39,75,52.0
+GPT-5.5 · Codex CLI,CLI Harness,md_en,32,75,42.7
+GPT-5.5 · Codex CLI,CLI Harness,md_pt,47,75,62.7
+GPT-5.5 · Codex CLI,CLI Harness,yaml_en,31,75,41.3
+GPT-5.5 · Codex CLI,CLI Harness,yaml_pt,35,75,46.7
+GPT-5.5 · Codex CLI,CLI Harness,xml_en,34,75,45.3
+GPT-5.5 · Codex CLI,CLI Harness,xml_pt,40,75,53.3
+GPT-5.6 luna · Codex CLI,CLI Harness,ntc,46,75,61.3
+GPT-5.6 luna · Codex CLI,CLI Harness,md_en,50,75,66.7
+GPT-5.6 luna · Codex CLI,CLI Harness,md_pt,41,75,54.7
+GPT-5.6 luna · Codex CLI,CLI Harness,yaml_en,49,75,65.3
+GPT-5.6 luna · Codex CLI,CLI Harness,yaml_pt,51,75,68.0
+GPT-5.6 luna · Codex CLI,CLI Harness,xml_en,52,75,69.3
+GPT-5.6 luna · Codex CLI,CLI Harness,xml_pt,47,75,62.7
+GPT-5.6 luna · Direct API,Direct API,ntc,51,75,68.0
+GPT-5.6 luna · Direct API,Direct API,md_en,55,75,73.3
+GPT-5.6 luna · Direct API,Direct API,md_pt,52,75,69.3
+GPT-5.6 luna · Direct API,Direct API,yaml_en,53,75,70.7
+GPT-5.6 luna · Direct API,Direct API,yaml_pt,52,75,69.3
+GPT-5.6 luna · Direct API,Direct API,xml_en,52,75,69.3
+GPT-5.6 luna · Direct API,Direct API,xml_pt,50,75,66.7
+GPT-5.6 sol · Codex CLI,CLI Harness,ntc,59,75,78.7
+GPT-5.6 sol · Codex CLI,CLI Harness,md_en,60,75,80.0
+GPT-5.6 sol · Codex CLI,CLI Harness,md_pt,62,75,82.7
+GPT-5.6 sol · Codex CLI,CLI Harness,yaml_en,57,75,76.0
+GPT-5.6 sol · Codex CLI,CLI Harness,yaml_pt,54,75,72.0
+GPT-5.6 sol · Codex CLI,CLI Harness,xml_en,58,75,77.3
+GPT-5.6 sol · Codex CLI,CLI Harness,xml_pt,57,75,76.0
+GPT-5.6 sol · Direct API,Direct API,ntc,52,75,69.3
+GPT-5.6 sol · Direct API,Direct API,md_en,58,75,77.3
+GPT-5.6 sol · Direct API,Direct API,md_pt,59,75,78.7
+GPT-5.6 sol · Direct API,Direct API,yaml_en,51,75,68.0
+GPT-5.6 sol · Direct API,Direct API,yaml_pt,54,75,72.0
+GPT-5.6 sol · Direct API,Direct API,xml_en,49,75,65.3
+GPT-5.6 sol · Direct API,Direct API,xml_pt,51,75,68.0
+GPT-5.6 terra · Codex CLI,CLI Harness,ntc,50,75,66.7
+GPT-5.6 terra · Codex CLI,CLI Harness,md_en,48,75,64.0
+GPT-5.6 terra · Codex CLI,CLI Harness,md_pt,56,75,74.7
+GPT-5.6 terra · Codex CLI,CLI Harness,yaml_en,48,75,64.0
+GPT-5.6 terra · Codex CLI,CLI Harness,yaml_pt,58,75,77.3
+GPT-5.6 terra · Codex CLI,CLI Harness,xml_en,55,75,73.3
+GPT-5.6 terra · Codex CLI,CLI Harness,xml_pt,51,75,68.0
+GPT-5.6 terra · Direct API,Direct API,ntc,57,75,76.0
+GPT-5.6 terra · Direct API,Direct API,md_en,52,75,69.3
+GPT-5.6 terra · Direct API,Direct API,md_pt,58,75,77.3
+GPT-5.6 terra · Direct API,Direct API,yaml_en,52,75,69.3
+GPT-5.6 terra · Direct API,Direct API,yaml_pt,51,75,68.0
+GPT-5.6 terra · Direct API,Direct API,xml_en,59,75,78.7
+GPT-5.6 terra · Direct API,Direct API,xml_pt,54,75,72.0
+Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,ntc,5,75,6.7
+Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,md_en,5,75,6.7
+Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,md_pt,4,75,5.3
+Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,yaml_en,5,75,6.7
+Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,yaml_pt,6,75,8.0
+Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,xml_en,11,75,14.7
+Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,xml_pt,5,75,6.7
+Gemini 2.5 Pro (run 1) · Direct API,Direct API,ntc,20,75,26.7
+Gemini 2.5 Pro (run 1) · Direct API,Direct API,md_en,26,75,34.7
+Gemini 2.5 Pro (run 1) · Direct API,Direct API,md_pt,28,75,37.3
+Gemini 2.5 Pro (run 1) · Direct API,Direct API,yaml_en,24,75,32.0
+Gemini 2.5 Pro (run 1) · Direct API,Direct API,yaml_pt,32,75,42.7
+Gemini 2.5 Pro (run 1) · Direct API,Direct API,xml_en,24,75,32.0
+Gemini 2.5 Pro (run 1) · Direct API,Direct API,xml_pt,29,75,38.7
+Gemini 2.5 Pro (run 2) · Direct API,Direct API,ntc,20,75,26.7
+Gemini 2.5 Pro (run 2) · Direct API,Direct API,md_en,27,75,36.0
+Gemini 2.5 Pro (run 2) · Direct API,Direct API,md_pt,33,75,44.0
+Gemini 2.5 Pro (run 2) · Direct API,Direct API,yaml_en,21,75,28.0
+Gemini 2.5 Pro (run 2) · Direct API,Direct API,yaml_pt,26,75,34.7
+Gemini 2.5 Pro (run 2) · Direct API,Direct API,xml_en,25,75,33.3
+Gemini 2.5 Pro (run 2) · Direct API,Direct API,xml_pt,21,75,28.0
+Gemini 3 Flash · Direct API,Direct API,ntc,42,75,56.0
+Gemini 3 Flash · Direct API,Direct API,md_en,35,75,46.7
+Gemini 3 Flash · Direct API,Direct API,md_pt,37,75,49.3
+Gemini 3 Flash · Direct API,Direct API,yaml_en,42,75,56.0
+Gemini 3 Flash · Direct API,Direct API,yaml_pt,37,75,49.3
+Gemini 3 Flash · Direct API,Direct API,xml_en,38,75,50.7
+Gemini 3 Flash · Direct API,Direct API,xml_pt,36,75,48.0
+Gemini 3.1 Flash-Lite · Direct API,Direct API,ntc,6,75,8.0
+Gemini 3.1 Flash-Lite · Direct API,Direct API,md_en,5,75,6.7
+Gemini 3.1 Flash-Lite · Direct API,Direct API,md_pt,5,75,6.7
+Gemini 3.1 Flash-Lite · Direct API,Direct API,yaml_en,5,75,6.7
+Gemini 3.1 Flash-Lite · Direct API,Direct API,yaml_pt,5,75,6.7
+Gemini 3.1 Flash-Lite · Direct API,Direct API,xml_en,5,75,6.7
+Gemini 3.1 Flash-Lite · Direct API,Direct API,xml_pt,5,75,6.7
+Gemini 3.1 Pro · Direct API,Direct API,ntc,49,75,65.3
+Gemini 3.1 Pro · Direct API,Direct API,md_en,49,75,65.3
+Gemini 3.1 Pro · Direct API,Direct API,md_pt,47,75,62.7
+Gemini 3.1 Pro · Direct API,Direct API,yaml_en,49,75,65.3
+Gemini 3.1 Pro · Direct API,Direct API,yaml_pt,48,75,64.0
+Gemini 3.1 Pro · Direct API,Direct API,xml_en,46,75,61.3
+Gemini 3.1 Pro · Direct API,Direct API,xml_pt,53,75,70.7
+Gemini 3.5 Flash · Direct API,Direct API,ntc,45,75,60.0
+Gemini 3.5 Flash · Direct API,Direct API,md_en,38,75,50.7
+Gemini 3.5 Flash · Direct API,Direct API,md_pt,39,75,52.0
+Gemini 3.5 Flash · Direct API,Direct API,yaml_en,44,75,58.7
+Gemini 3.5 Flash · Direct API,Direct API,yaml_pt,41,75,54.7
+Gemini 3.5 Flash · Direct API,Direct API,xml_en,41,75,54.7
+Gemini 3.5 Flash · Direct API,Direct API,xml_pt,45,75,60.0
+Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,ntc,34,75,45.3
+Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,md_en,40,75,53.3
+Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,md_pt,34,75,45.3
+Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,yaml_en,37,75,49.3
+Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,yaml_pt,34,75,45.3
+Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,xml_en,40,75,53.3
+Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,xml_pt,34,75,45.3
+Gemini 3.6 Flash · Direct API,Direct API,ntc,46,75,61.3
+Gemini 3.6 Flash · Direct API,Direct API,md_en,43,75,57.3
+Gemini 3.6 Flash · Direct API,Direct API,md_pt,43,75,57.3
+Gemini 3.6 Flash · Direct API,Direct API,yaml_en,48,75,64.0
+Gemini 3.6 Flash · Direct API,Direct API,yaml_pt,43,75,57.3
+Gemini 3.6 Flash · Direct API,Direct API,xml_en,46,75,61.3
+Gemini 3.6 Flash · Direct API,Direct API,xml_pt,46,75,61.3
+Grok 4.3 · Direct API,Direct API,ntc,30,75,40.0
+Grok 4.3 · Direct API,Direct API,md_en,36,75,48.0
+Grok 4.3 · Direct API,Direct API,md_pt,28,75,37.3
+Grok 4.3 · Direct API,Direct API,yaml_en,27,75,36.0
+Grok 4.3 · Direct API,Direct API,yaml_pt,32,75,42.7
+Grok 4.3 · Direct API,Direct API,xml_en,34,75,45.3
+Grok 4.3 · Direct API,Direct API,xml_pt,25,75,33.3
 Grok 4.5 · grok CLI,CLI Harness,ntc,46,75,61.3
 Grok 4.5 · grok CLI,CLI Harness,md_en,45,75,60.0
 Grok 4.5 · grok CLI,CLI Harness,md_pt,37,75,49.3
@@ -160,48 +160,48 @@ Grok 4.5 · grok CLI,CLI Harness,yaml_en,43,75,57.3
 Grok 4.5 · grok CLI,CLI Harness,yaml_pt,46,75,61.3
 Grok 4.5 · grok CLI,CLI Harness,xml_en,48,75,64.0
 Grok 4.5 · grok CLI,CLI Harness,xml_pt,48,75,64.0
-Haiku 4.5 · batch,Direct API,ntc,15,75,20.0
-Haiku 4.5 · batch,Direct API,md_en,14,75,18.7
-Haiku 4.5 · batch,Direct API,md_pt,15,75,20.0
-Haiku 4.5 · batch,Direct API,yaml_en,9,75,12.0
-Haiku 4.5 · batch,Direct API,yaml_pt,13,75,17.3
-Haiku 4.5 · batch,Direct API,xml_en,8,75,10.7
-Haiku 4.5 · batch,Direct API,xml_pt,18,75,24.0
-Kimi K2.6 · batch,Direct API,ntc,42,75,56.0
-Kimi K2.6 · batch,Direct API,md_en,42,75,56.0
-Kimi K2.6 · batch,Direct API,md_pt,40,75,53.3
-Kimi K2.6 · batch,Direct API,yaml_en,43,75,57.3
-Kimi K2.6 · batch,Direct API,yaml_pt,40,75,53.3
-Kimi K2.6 · batch,Direct API,xml_en,42,75,56.0
-Kimi K2.6 · batch,Direct API,xml_pt,41,75,54.7
-Kimi K3 · API,Direct API,ntc,39,75,52.0
-Kimi K3 · API,Direct API,md_en,41,75,54.7
-Kimi K3 · API,Direct API,md_pt,41,75,54.7
-Kimi K3 · API,Direct API,yaml_en,45,75,60.0
-Kimi K3 · API,Direct API,yaml_pt,43,75,57.3
-Kimi K3 · API,Direct API,xml_en,41,75,54.7
-Kimi K3 · API,Direct API,xml_pt,37,75,49.3
-MiniMax M3 · API,Direct API,ntc,27,75,36.0
-MiniMax M3 · API,Direct API,md_en,18,75,24.0
-MiniMax M3 · API,Direct API,md_pt,19,75,25.3
-MiniMax M3 · API,Direct API,yaml_en,25,75,33.3
-MiniMax M3 · API,Direct API,yaml_pt,25,75,33.3
-MiniMax M3 · API,Direct API,xml_en,20,75,26.7
-MiniMax M3 · API,Direct API,xml_pt,25,75,33.3
+Haiku 4.5 · Direct API,Direct API,ntc,15,75,20.0
+Haiku 4.5 · Direct API,Direct API,md_en,14,75,18.7
+Haiku 4.5 · Direct API,Direct API,md_pt,15,75,20.0
+Haiku 4.5 · Direct API,Direct API,yaml_en,9,75,12.0
+Haiku 4.5 · Direct API,Direct API,yaml_pt,13,75,17.3
+Haiku 4.5 · Direct API,Direct API,xml_en,8,75,10.7
+Haiku 4.5 · Direct API,Direct API,xml_pt,18,75,24.0
+Kimi K2.6 · Direct API,Direct API,ntc,42,75,56.0
+Kimi K2.6 · Direct API,Direct API,md_en,42,75,56.0
+Kimi K2.6 · Direct API,Direct API,md_pt,40,75,53.3
+Kimi K2.6 · Direct API,Direct API,yaml_en,43,75,57.3
+Kimi K2.6 · Direct API,Direct API,yaml_pt,40,75,53.3
+Kimi K2.6 · Direct API,Direct API,xml_en,42,75,56.0
+Kimi K2.6 · Direct API,Direct API,xml_pt,41,75,54.7
+Kimi K3 · Direct API,Direct API,ntc,39,75,52.0
+Kimi K3 · Direct API,Direct API,md_en,41,75,54.7
+Kimi K3 · Direct API,Direct API,md_pt,41,75,54.7
+Kimi K3 · Direct API,Direct API,yaml_en,45,75,60.0
+Kimi K3 · Direct API,Direct API,yaml_pt,43,75,57.3
+Kimi K3 · Direct API,Direct API,xml_en,41,75,54.7
+Kimi K3 · Direct API,Direct API,xml_pt,37,75,49.3
 MiniMax M3 · Claude Code,CLI Harness,ntc,21,75,28.0
 MiniMax M3 · Claude Code,CLI Harness,md_en,23,75,30.7
 MiniMax M3 · Claude Code,CLI Harness,md_pt,13,75,17.3
 MiniMax M3 · Claude Code,CLI Harness,yaml_en,16,75,21.3
-MiniMax M3 · Claude Code,CLI Harness,yaml_pt,13,74,17.6
+MiniMax M3 · Claude Code,CLI Harness,yaml_pt,13,75,17.3
 MiniMax M3 · Claude Code,CLI Harness,xml_en,18,75,24.0
 MiniMax M3 · Claude Code,CLI Harness,xml_pt,22,75,29.3
-Opus 4.6 · batch,Direct API,ntc,20,75,26.7
-Opus 4.6 · batch,Direct API,md_en,17,75,22.7
-Opus 4.6 · batch,Direct API,md_pt,22,75,29.3
-Opus 4.6 · batch,Direct API,yaml_en,17,75,22.7
-Opus 4.6 · batch,Direct API,yaml_pt,25,75,33.3
-Opus 4.6 · batch,Direct API,xml_en,18,75,24.0
-Opus 4.6 · batch,Direct API,xml_pt,19,75,25.3
+MiniMax M3 · Direct API,Direct API,ntc,27,75,36.0
+MiniMax M3 · Direct API,Direct API,md_en,18,75,24.0
+MiniMax M3 · Direct API,Direct API,md_pt,19,75,25.3
+MiniMax M3 · Direct API,Direct API,yaml_en,25,75,33.3
+MiniMax M3 · Direct API,Direct API,yaml_pt,25,75,33.3
+MiniMax M3 · Direct API,Direct API,xml_en,20,75,26.7
+MiniMax M3 · Direct API,Direct API,xml_pt,25,75,33.3
+Opus 4.6 · Direct API,Direct API,ntc,20,75,26.7
+Opus 4.6 · Direct API,Direct API,md_en,17,75,22.7
+Opus 4.6 · Direct API,Direct API,md_pt,22,75,29.3
+Opus 4.6 · Direct API,Direct API,yaml_en,17,75,22.7
+Opus 4.6 · Direct API,Direct API,yaml_pt,25,75,33.3
+Opus 4.6 · Direct API,Direct API,xml_en,18,75,24.0
+Opus 4.6 · Direct API,Direct API,xml_pt,19,75,25.3
 Opus 4.8 · Claude Code,CLI Harness,ntc,49,75,65.3
 Opus 4.8 · Claude Code,CLI Harness,md_en,45,75,60.0
 Opus 4.8 · Claude Code,CLI Harness,md_pt,44,75,58.7
@@ -209,13 +209,13 @@ Opus 4.8 · Claude Code,CLI Harness,yaml_en,34,75,45.3
 Opus 4.8 · Claude Code,CLI Harness,yaml_pt,44,75,58.7
 Opus 4.8 · Claude Code,CLI Harness,xml_en,38,75,50.7
 Opus 4.8 · Claude Code,CLI Harness,xml_pt,41,75,54.7
-Opus 4.8 · batch,Direct API,ntc,35,75,46.7
-Opus 4.8 · batch,Direct API,md_en,39,75,52.0
-Opus 4.8 · batch,Direct API,md_pt,37,75,49.3
-Opus 4.8 · batch,Direct API,yaml_en,34,75,45.3
-Opus 4.8 · batch,Direct API,yaml_pt,32,75,42.7
-Opus 4.8 · batch,Direct API,xml_en,36,75,48.0
-Opus 4.8 · batch,Direct API,xml_pt,38,75,50.7
+Opus 4.8 · Direct API,Direct API,ntc,35,75,46.7
+Opus 4.8 · Direct API,Direct API,md_en,39,75,52.0
+Opus 4.8 · Direct API,Direct API,md_pt,37,75,49.3
+Opus 4.8 · Direct API,Direct API,yaml_en,34,75,45.3
+Opus 4.8 · Direct API,Direct API,yaml_pt,32,75,42.7
+Opus 4.8 · Direct API,Direct API,xml_en,36,75,48.0
+Opus 4.8 · Direct API,Direct API,xml_pt,38,75,50.7
 Qwen3.8-max · qwen CLI,CLI Harness,ntc,41,75,54.7
 Qwen3.8-max · qwen CLI,CLI Harness,md_en,40,75,53.3
 Qwen3.8-max · qwen CLI,CLI Harness,md_pt,37,75,49.3
@@ -230,10 +230,10 @@ Sonnet 5 · Claude Code,CLI Harness,yaml_en,29,75,38.7
 Sonnet 5 · Claude Code,CLI Harness,yaml_pt,44,75,58.7
 Sonnet 5 · Claude Code,CLI Harness,xml_en,35,75,46.7
 Sonnet 5 · Claude Code,CLI Harness,xml_pt,39,75,52.0
-Sonnet 5 · batch,Direct API,ntc,16,75,21.3
-Sonnet 5 · batch,Direct API,md_en,21,75,28.0
-Sonnet 5 · batch,Direct API,md_pt,27,75,36.0
-Sonnet 5 · batch,Direct API,yaml_en,18,75,24.0
-Sonnet 5 · batch,Direct API,yaml_pt,19,75,25.3
-Sonnet 5 · batch,Direct API,xml_en,20,75,26.7
-Sonnet 5 · batch,Direct API,xml_pt,28,75,37.3
+Sonnet 5 · Direct API,Direct API,ntc,16,75,21.3
+Sonnet 5 · Direct API,Direct API,md_en,21,75,28.0
+Sonnet 5 · Direct API,Direct API,md_pt,27,75,36.0
+Sonnet 5 · Direct API,Direct API,yaml_en,18,75,24.0
+Sonnet 5 · Direct API,Direct API,yaml_pt,19,75,25.3
+Sonnet 5 · Direct API,Direct API,xml_en,20,75,26.7
+Sonnet 5 · Direct API,Direct API,xml_pt,28,75,37.3

@@ -12,8 +12,10 @@ and **thinking configuration** affect the reasoning accuracy of AI models.
 Full case study (in Portuguese):
 **https://ficaadica.com.br/novidades/ntc-modelos-performam-melhor/**
 
-Created by [Paulo Teixeira](https://ficaadica.com.br/sobre/) — creator of the
-[Prompthen](https://prompthen.ai) method.
+The Prompthen Bench was created by **Paulo Teixeira**, a Brazilian AI
+specialist — the same author behind **NTC**, a proprietary prompt engineering
+he created, and the [Prompthen](https://prompthen.ai) method.
+[About Paulo Teixeira](https://ficaadica.com.br/sobre/).
 
 ## The three test groups
 
@@ -40,8 +42,9 @@ The same puzzles rendered in seven engineered prompt formats — numeric data by
 | `xml_en` / `xml_pt` | XML, EN / PT | ✅ `prompts/` |
 | `ntc` | NTC (proprietary) | ❌ results only |
 
-**NTC** is a proprietary prompt engineering created by Paulo Teixeira. Its
-results are published in full; the notation itself is not.
+**NTC** is a proprietary prompt engineering created by **Paulo Teixeira, a
+Brazilian AI specialist** — the same author of this benchmark. Its results and
+token compression are published in full; the notation itself is not.
 
 ## Repository layout
 
@@ -97,8 +100,9 @@ deterministic (exact match).
 Every number in the case study can be recomputed from `results/per_cell.csv`
 (sum `correct` by run, group or format). To cite:
 
-> Teixeira, Paulo. *Prompthen Bench: 34 runs, 7 prompt engineerings, 2
-> languages, deterministic verification.* Fica a Dica, July 2026.
+> Teixeira, Paulo (Brazil). *Prompthen Bench: 17,850 evaluated AI responses,
+> 29 models, 7 prompt engineerings, 2 languages, deterministic verification.*
+> Fica a Dica, July 2026.
 > https://ficaadica.com.br/novidades/ntc-modelos-performam-melhor/
 
 ## License

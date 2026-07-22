@@ -1,0 +1,54 @@
+task: Infer the single hidden rule mapping each input grid to its output grid, then produce the output grid for the test input. Grids are matrices of digits 0-9 (0 is background). Output the test output grid as a JSON array of arrays of integers only.
+examples:
+  - example: 1
+    input:
+      - "3 3 0"
+      - "2 0 0"
+      - "3 2 1"
+      - "2 0 0"
+      - "0 3 0"
+    output:
+      - "6 3 6"
+      - "2 6 6"
+      - "3 2 1"
+      - "2 6 6"
+      - "3 3 6"
+  - example: 2
+    input:
+      - "3 3 3 3 2"
+      - "0 0 3 3 0"
+      - "0 0 2 2 0"
+      - "2 0 1 1 0"
+    output:
+      - "3 0 0 2"
+      - "3 0 0 0"
+      - "3 3 2 1"
+      - "3 3 2 1"
+      - "2 0 0 0"
+  - example: 3
+    input:
+      - "1 0 3 1 1"
+      - "3 2 0 3 0"
+      - "1 0 1 2 2"
+    output:
+      - "1 3 1"
+      - "0 2 0"
+      - "3 0 1"
+      - "1 3 2"
+      - "1 0 2"
+  - example: 4
+    input:
+      - "3 0 3 1 0"
+      - "2 0 3 0 1"
+      - "1 0 0 0 0"
+    output:
+      - "3 2 1"
+      - "0 0 0"
+      - "3 3 0"
+      - "1 0 0"
+      - "0 1 0"
+test_input:
+  - "1 2 1"
+  - "2 3 3"
+  - "2 0 2"
+output: test output grid as JSON array of arrays of integers, e.g. [[1,2],[3,4]], no prose

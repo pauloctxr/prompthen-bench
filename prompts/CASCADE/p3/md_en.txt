@@ -1,0 +1,31 @@
+# Task
+
+Three hidden transformation rules — Alpha, Beta, Gamma — each turn a sequence of integers into another sequence. Infer each rule from its examples.
+
+## Rule examples
+
+### Alpha
+- `[9,6,5,3,2,1] -> [9,6,3,2]`
+- `[7,1,2] -> [7,1]`
+- `[7,3,9] -> [7,3]`
+- `[5,2,3,9,1,5] -> [5,2,9,1]`
+
+### Beta
+- `[6,3,1,4,4] -> [6,3,1,1,4,4,4,4]`
+- `[9,1,3,4,3,9,6] -> [9,1,1,3,4,4,3,9,6]`
+- `[8,9,8,6,6,7] -> [8,9,8,6,6,7,7]`
+- `[8,7,3,9,1,1] -> [8,7,7,3,9,1,1,1,1]`
+
+### Gamma
+- `[3,8,5,8,9,4,2] -> [3,5,8,-3,5,3,8,1,9,-5,4,-2,2]`
+- `[1,6,7] -> [1,5,6,1,7]`
+- `[5,1,8] -> [5,-4,1,7,8]`
+- `[3,8,6,4,5,1] -> [3,5,8,-2,6,-2,4,1,5,-4,1]`
+
+## Apply in chain
+Apply the rules in order to the test input: first **Alpha**, then **Beta** on Alpha's result, then **Gamma** on Beta's result — i.e. `Gamma(Beta(Alpha(test)))`.
+
+**Test input:** `[4,2,1,3,6]`
+
+## Output
+Output ONLY the final sequence as a JSON array of integers (e.g. `[1,2,3]`). No prose.

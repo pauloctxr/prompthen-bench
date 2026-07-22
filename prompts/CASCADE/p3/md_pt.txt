@@ -1,0 +1,31 @@
+# Tarefa
+
+Três regras de transformação ocultas — Alpha, Beta, Gamma — cada uma converte uma sequência de inteiros em outra sequência. Infira cada regra a partir de seus exemplos.
+
+## Exemplos das regras
+
+### Alpha
+- `[9,6,5,3,2,1] -> [9,6,3,2]`
+- `[7,1,2] -> [7,1]`
+- `[7,3,9] -> [7,3]`
+- `[5,2,3,9,1,5] -> [5,2,9,1]`
+
+### Beta
+- `[6,3,1,4,4] -> [6,3,1,1,4,4,4,4]`
+- `[9,1,3,4,3,9,6] -> [9,1,1,3,4,4,3,9,6]`
+- `[8,9,8,6,6,7] -> [8,9,8,6,6,7,7]`
+- `[8,7,3,9,1,1] -> [8,7,7,3,9,1,1,1,1]`
+
+### Gamma
+- `[3,8,5,8,9,4,2] -> [3,5,8,-3,5,3,8,1,9,-5,4,-2,2]`
+- `[1,6,7] -> [1,5,6,1,7]`
+- `[5,1,8] -> [5,-4,1,7,8]`
+- `[3,8,6,4,5,1] -> [3,5,8,-2,6,-2,4,1,5,-4,1]`
+
+## Aplicar em cadeia
+Aplique as regras em ordem à entrada de teste: primeiro **Alpha**, depois **Beta** sobre o resultado de Alpha, depois **Gamma** sobre o resultado de Beta — ou seja, `Gamma(Beta(Alpha(teste)))`.
+
+**Entrada de teste:** `[4,2,1,3,6]`
+
+## Saída
+Retorne SOMENTE a sequência final como um array JSON de inteiros (ex.: `[1,2,3]`). Sem texto.

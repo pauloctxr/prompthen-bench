@@ -1,0 +1,27 @@
+<tarefa>Infira tres regras ocultas (Alpha, Beta, Gamma) a partir de seus exemplos, depois aplique-as em cadeia a entrada de teste. Retorne SOMENTE a sequencia final como um array JSON de inteiros.</tarefa>
+<exemplos_das_regras>
+  <regra nome="Alpha">
+    <exemplo>[4,5,2,4,2,6] -> [4,5,4,6]</exemplo>
+    <exemplo>[6,8,1,2,8] -> [6,8,2,8]</exemplo>
+    <exemplo>[3,9,7,1] -> [3,9]</exemplo>
+    <exemplo>[4,2,2] -> [4]</exemplo>
+  </regra>
+  <regra nome="Beta">
+    <exemplo>[1,8,6] -> [1,8,6,6]</exemplo>
+    <exemplo>[6,4,6,1,2,3,1] -> [6,6,4,6,6,1,2,3,3,1]</exemplo>
+    <exemplo>[5,3,5] -> [5,3,3,5]</exemplo>
+    <exemplo>[8,3,3,4,7,1,7] -> [8,3,3,3,3,4,7,1,7]</exemplo>
+  </regra>
+  <regra nome="Gamma">
+    <exemplo>[9,5,1,3,5] -> [1,3,5,9,5]</exemplo>
+    <exemplo>[7,4,4,4,4,1] -> [4,4,4,1,7,4]</exemplo>
+    <exemplo>[2,8,4] -> [4,2,8]</exemplo>
+    <exemplo>[7,8,1,6,3] -> [1,6,3,7,8]</exemplo>
+  </regra>
+</exemplos_das_regras>
+<cadeia>
+  <ordem>Alpha, depois Beta, depois Gamma</ordem>
+  <significado>Gamma(Beta(Alpha(entrada_de_teste)))</significado>
+</cadeia>
+<entrada_de_teste>[7,3,6,5,7,1]</entrada_de_teste>
+<saida>array JSON de inteiros, apenas o resultado final, ex. [1,2,3], sem texto</saida>

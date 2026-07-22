@@ -1,0 +1,32 @@
+tarefa: Simule o VOLTGRID em uma fita circular de 8 celulas. Infira a regra oculta a partir das execucoes de exemplo, depois simule o teste. Retorne o estado final como uma lista JSON de pares [posicao, carga] ordenada por posicao, apenas.
+regras_por_rodada:
+  - "1. Todo token move uma celula no sentido horario (posicao +1 mod N). Tokens que caem na mesma celula fundem-se em um token cuja carga e a soma."
+  - "2. Depois, simultaneamente para todos os tokens: qualquer token com vizinho imediatamente adjacente (distancia 1 no circulo) de carga de SINAL OPOSTO perde 1 de magnitude (mantem o sinal)."
+  - "3. (regra oculta — age entre a regra 2 e a regra 4; infira-a a partir das execucoes de exemplo)"
+  - "4. Por fim, qualquer token com carga 0 evapora (e removido)."
+execucoes_de_exemplo:
+  - execucao: 1
+    fita: 8
+    trace:
+      inicial: [[5, 6]]
+      rodada_1: [[7, 6]]
+      rodada_2: [[1, 6]]
+      rodada_3: [[3, 6]]
+  - execucao: 2
+    fita: 8
+    trace:
+      inicial: [[7, 4]]
+      rodada_1: [[0, 4]]
+      rodada_2: [[1, 4]]
+  - execucao: 3
+    fita: 8
+    trace:
+      inicial: [[4, 4], [6, 3]]
+      rodada_1: [[0, 3], [5, 4]]
+      rodada_2: [[2, 3], [6, 4]]
+      rodada_3: [[4, 3], [7, 4]]
+teste:
+  fita: 8
+  inicial: [[2, -2], [3, -1], [4, 6]]
+  rodadas: 3
+saida: estado final como lista JSON de pares [posicao, carga] ordenada por posicao, ex. [[0,2],[5,-1]], sem texto

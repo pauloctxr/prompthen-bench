@@ -1,0 +1,68 @@
+<tarefa>Infira a unica regra oculta que mapeia cada grade de entrada para sua grade de saida, depois produza a grade de saida para a entrada de teste. As grades sao matrizes de digitos 0-9 (0 e o fundo). Retorne SOMENTE a grade de saida de teste como um array JSON de arrays de inteiros.</tarefa>
+<exemplos>
+  <exemplo n="1">
+    <entrada>
+      <row>3 0 0 0 0</row>
+      <row>0 0 0 0 0</row>
+      <row>0 1 3 2 0</row>
+      <row>0 2 0 0 1</row>
+    </entrada>
+    <saida>
+      <row>0 0 0 0 4</row>
+      <row>0 0 0 0 0</row>
+      <row>0 2 4 1 0</row>
+      <row>1 0 0 2 0</row>
+    </saida>
+  </exemplo>
+  <exemplo n="2">
+    <entrada>
+      <row>1 0 3 0 0</row>
+      <row>3 0 3 1 0</row>
+      <row>0 1 0 0 0</row>
+      <row>3 0 0 2 0</row>
+      <row>0 0 0 1 1</row>
+    </entrada>
+    <saida>
+      <row>0 0 4 0 1</row>
+      <row>0 1 4 0 4</row>
+      <row>0 0 0 1 0</row>
+      <row>0 2 0 0 4</row>
+      <row>1 1 0 0 0</row>
+    </saida>
+  </exemplo>
+  <exemplo n="3">
+    <entrada>
+      <row>2 0 0 3 3</row>
+      <row>0 0 0 3 3</row>
+      <row>1 2 0 3 3</row>
+    </entrada>
+    <saida>
+      <row>1 0 5</row>
+      <row>5 0 0</row>
+      <row>0 0 0</row>
+      <row>3 3 3</row>
+      <row>3 3 3</row>
+    </saida>
+  </exemplo>
+  <exemplo n="4">
+    <entrada>
+      <row>1 2 0 1</row>
+      <row>2 0 1 2</row>
+      <row>0 1 0 3</row>
+      <row>3 2 0 0</row>
+    </entrada>
+    <saida>
+      <row>1 0 2 1</row>
+      <row>2 1 0 2</row>
+      <row>4 0 1 0</row>
+      <row>0 0 2 4</row>
+    </saida>
+  </exemplo>
+</exemplos>
+  <entrada_de_teste>
+    <row>0 0 0</row>
+    <row>0 0 0</row>
+    <row>1 1 1</row>
+    <row>0 1 1</row>
+  </entrada_de_teste>
+<saida>grade de saida de teste como array JSON de arrays de inteiros, ex. [[1,2],[3,4]], sem texto</saida>

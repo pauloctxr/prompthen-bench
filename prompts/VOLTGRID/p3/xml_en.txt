@@ -1,0 +1,30 @@
+<task>Simulate VOLTGRID on a circular tape of 8 cells. Infer the hidden rule from the example runs, then simulate the test. Output ONLY the final state as a JSON list of [position, charge] pairs sorted by position.</task>
+<rules_per_round>
+  <rule>1. Every token moves one cell clockwise (position +1 mod N). Tokens landing on the same cell merge into one token whose charge is the sum.</rule>
+  <rule>2. Then, simultaneously for all tokens: any token with an immediately adjacent neighbor (distance 1 on the circle) of OPPOSITE-sign charge loses 1 of magnitude (keeps its sign).</rule>
+  <rule>3. (hidden rule — acts between rule 2 and rule 4; infer it from the example runs)</rule>
+  <rule>4. Finally, any token with charge 0 evaporates (is removed).</rule>
+</rules_per_round>
+<example_runs>
+  <run n="1" tape="8">
+    <state label="initial">[[1, 6]]</state>
+    <state label="round1">[[3, 6]]</state>
+    <state label="round2">[[5, 6]]</state>
+    <state label="round3">[[7, 6]]</state>
+  </run>
+  <run n="2" tape="8">
+    <state label="initial">[[4, -2]]</state>
+    <state label="round1">[[5, -2]]</state>
+    <state label="round2">[[6, -2]]</state>
+  </run>
+  <run n="3" tape="8">
+    <state label="initial">[[2, -2], [4, 4], [6, 2]]</state>
+    <state label="round1">[[3, -2], [5, 4], [7, 2]]</state>
+    <state label="round2">[[0, 2], [4, -2], [6, 4]]</state>
+    <state label="round3">[[1, 2], [5, -2], [7, 4]]</state>
+  </run>
+</example_runs>
+  <test tape="8" rounds="3">
+    <initial>[[5, -2], [6, 5], [7, -2]]</initial>
+  </test>
+<output>final state as JSON list of [position, charge] pairs sorted by position, e.g. [[0,2],[5,-1]], no prose</output>

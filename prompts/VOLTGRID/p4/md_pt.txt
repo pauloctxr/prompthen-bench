@@ -1,0 +1,35 @@
+# VOLTGRID
+
+VOLTGRID e um jogo em uma fita circular de 8 celulas (posicoes 0..7). Tokens carregam uma carga inteira nao-zero. O estado e uma lista de pares `[posicao, carga]` ordenada por posicao.
+
+## Regras (por rodada, em ordem)
+1. Todo token move uma celula no sentido horario (posicao +1 mod N). Tokens que caem na mesma celula fundem-se em um token cuja carga e a soma.
+2. Depois, simultaneamente para todos os tokens: qualquer token com vizinho imediatamente adjacente (distancia 1 no circulo) de carga de SINAL OPOSTO perde 1 de magnitude (mantem o sinal).
+3. (regra oculta — age entre a regra 2 e a regra 4; infira-a a partir das execucoes de exemplo)
+4. Por fim, qualquer token com carga 0 evapora (e removido).
+
+**A regra oculta 3 esta totalmente visivel nas execucoes de exemplo abaixo — infira-a.**
+
+## Execucoes de exemplo
+### Execucao 1 (fita de tamanho 8)
+- inicial: `[[4, 6]]`
+- apos rodada 1: `[[6, 6]]`
+- apos rodada 2: `[[0, 6]]`
+- apos rodada 3: `[[2, 6]]`
+
+### Execucao 2 (fita de tamanho 8)
+- inicial: `[[6, 4]]`
+- apos rodada 1: `[[7, 4]]`
+- apos rodada 2: `[[0, 4]]`
+
+### Execucao 3 (fita de tamanho 8)
+- inicial: `[[3, -4], [5, 1]]`
+- apos rodada 1: `[[4, -4], [6, 1]]`
+- apos rodada 2: `[[5, -4], [7, 1]]`
+- apos rodada 3: `[[0, 1], [6, -4]]`
+
+## Teste
+Fita de tamanho 8, estado inicial `[[0, 2], [3, 3], [4, 5]]`. Simule 3 rodadas (regras documentadas + a regra oculta).
+
+## Saida
+Retorne SOMENTE o estado final como uma lista JSON de pares `[posicao, carga]` ordenada por posicao (ex.: `[[0,2],[5,-1]]`). Sem texto.

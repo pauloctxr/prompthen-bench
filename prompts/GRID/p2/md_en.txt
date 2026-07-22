@@ -1,0 +1,82 @@
+# Task
+
+Each example shows an input grid transformed into an output grid by a single hidden rule. Grids are matrices of digits 0-9 (0 is background). Infer the rule from the examples, then produce the output grid for the test input.
+
+## Examples
+
+### Example 1
+Input:
+```
+3 0 0 0 0
+0 0 0 0 0
+0 1 3 2 0
+0 2 0 0 1
+```
+Output:
+```
+0 0 0 0 4
+0 0 0 0 0
+0 2 4 1 0
+1 0 0 2 0
+```
+
+### Example 2
+Input:
+```
+1 0 3 0 0
+3 0 3 1 0
+0 1 0 0 0
+3 0 0 2 0
+0 0 0 1 1
+```
+Output:
+```
+0 0 4 0 1
+0 1 4 0 4
+0 0 0 1 0
+0 2 0 0 4
+1 1 0 0 0
+```
+
+### Example 3
+Input:
+```
+2 0 0 3 3
+0 0 0 3 3
+1 2 0 3 3
+```
+Output:
+```
+1 0 5
+5 0 0
+0 0 0
+3 3 3
+3 3 3
+```
+
+### Example 4
+Input:
+```
+1 2 0 1
+2 0 1 2
+0 1 0 3
+3 2 0 0
+```
+Output:
+```
+1 0 2 1
+2 1 0 2
+4 0 1 0
+0 0 2 4
+```
+
+## Test input
+```
+0 0 0
+0 0 0
+1 1 1
+0 1 1
+```
+
+## Output
+Output ONLY the test output grid as a JSON array of arrays of integers (e.g. `[[1,2],[3,4]]`). No prose.

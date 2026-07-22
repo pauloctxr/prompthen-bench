@@ -1,0 +1,22 @@
+tarefa: Infira tres regras ocultas (Alpha, Beta, Gamma) a partir de seus exemplos, depois aplique-as em cadeia a entrada de teste. Retorne a sequencia final como um array JSON apenas.
+exemplos_das_regras:
+  Alpha:
+    - "[8,3,9] -> [11,12,9]"
+    - "[9,4,5,3,1,4] -> [13,9,8,4,5,4]"
+    - "[6,1,2,7,2,4] -> [7,3,9,9,6,4]"
+    - "[4,8,2,8] -> [12,10,10,8]"
+  Beta:
+    - "[4,4,9,1,5,9,4] -> [4,0,4,5,9,-8,1,4,5,4,9,-5,4]"
+    - "[1,7,9,8] -> [1,6,7,2,9,-1,8]"
+    - "[6,1,3,4] -> [6,-5,1,2,3,1,4]"
+    - "[7,3,5,9,5,9] -> [7,-4,3,2,5,4,9,-4,5,4,9]"
+  Gamma:
+    - "[7,1,9,1,3] -> [7,9,3]"
+    - "[5,7,6,8] -> [5,7,8]"
+    - "[7,8,4,1,6] -> [7,8,6]"
+    - "[3,7,2,6,5,3,5] -> [3,7,6,5]"
+cadeia:
+  ordem: [Alpha, Beta, Gamma]
+  significado: Gamma(Beta(Alpha(entrada_de_teste)))
+entrada_de_teste: [7,7,5,9,7,7]
+saida: array JSON de inteiros, apenas o resultado final, ex. [1,2,3], sem texto

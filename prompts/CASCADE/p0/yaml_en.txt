@@ -1,0 +1,22 @@
+task: Infer three hidden rules (Alpha, Beta, Gamma) from their examples, then apply them in chain to the test input. Output the final sequence as a JSON array only.
+rule_examples:
+  Alpha:
+    - "[8,3,9] -> [11,12,9]"
+    - "[9,4,5,3,1,4] -> [13,9,8,4,5,4]"
+    - "[6,1,2,7,2,4] -> [7,3,9,9,6,4]"
+    - "[4,8,2,8] -> [12,10,10,8]"
+  Beta:
+    - "[4,4,9,1,5,9,4] -> [4,0,4,5,9,-8,1,4,5,4,9,-5,4]"
+    - "[1,7,9,8] -> [1,6,7,2,9,-1,8]"
+    - "[6,1,3,4] -> [6,-5,1,2,3,1,4]"
+    - "[7,3,5,9,5,9] -> [7,-4,3,2,5,4,9,-4,5,4,9]"
+  Gamma:
+    - "[7,1,9,1,3] -> [7,9,3]"
+    - "[5,7,6,8] -> [5,7,8]"
+    - "[7,8,4,1,6] -> [7,8,6]"
+    - "[3,7,2,6,5,3,5] -> [3,7,6,5]"
+chain:
+  order: [Alpha, Beta, Gamma]
+  meaning: Gamma(Beta(Alpha(test_input)))
+test_input: [7,7,5,9,7,7]
+output: JSON array of integers, final result only, e.g. [1,2,3], no prose

@@ -1,24 +1,3 @@
-Prompthen Bench — prompts and result data
-Copyright (c) 2026 Paulo Teixeira (https://ficaadica.com.br/sobre/)
-
-Licensed under the Creative Commons Attribution 4.0 International License
-(CC BY 4.0). You are free to share and adapt this material for any purpose,
-including commercially, provided you give appropriate credit.
-
-Suggested attribution:
-
-  Teixeira, Paulo. "Prompthen Bench: 17,850 evaluated AI responses, 27 models,
-  7 prompt engineerings, 2 languages, deterministic verification."
-  Fica a Dica, July 2026.
-  https://ficaadica.com.br/novidades/ntc-modelos-performam-melhor/
-
-Scope: this license covers the prompts under prompts/ and the result data under
-results/. It does not cover the NTC prompt engineering notation itself, which is
-proprietary and is not published in this repository — only its results and its
-measured token cost are.
-
-Full license text follows.
-
 Attribution 4.0 International
 
 =======================================================================
@@ -415,3 +394,19 @@ public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
 
+-----------------------------------------------------------------------
+
+APPLIES TO: Prompthen Bench — prompts and result data
+Copyright (c) 2026 Paulo Teixeira — https://ficaadica.com.br/sobre/
+
+Suggested attribution:
+
+  Teixeira, Paulo. "Prompthen Bench: 17,850 evaluated AI responses, 27 models,
+  7 prompt engineerings, 2 languages, deterministic verification."
+  Fica a Dica, July 2026.
+  https://ficaadica.com.br/novidades/ntc-modelos-performam-melhor/
+
+Scope: this license covers the prompts under prompts/ and the result data under
+results/. It does not cover the NTC prompt engineering notation itself, which is
+proprietary and is not published in this repository — only its results and its
+measured token cost are.

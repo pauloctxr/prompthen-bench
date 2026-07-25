@@ -61,6 +61,8 @@ results/
   cascade.csv        # ranking on the CASCADE group (175 cells)
   voltgrid.csv       # ranking on the VOLTGRID group (175 cells)
   by_format.csv      # per-run × per-format accuracy (all 7 formats, NTC included)
+  by_format_tokens.csv # accuracy × token cost per format (cl100k), globally and
+                     #   per group, with the efficiency-frontier flag
   ablation.csv       # 2,100 rows — thinking on/off ablation for the two Lite
                      #   models (NOT part of the 34 ranked runs; see below)
 ```
@@ -115,7 +117,19 @@ recovered almost nothing.
    favored PT, 16 favored EN, 2 drew. PT wins on aggregate because its gains
    are larger, not more frequent — the largest single case is Sonnet 5 at
    +12.9 pts (p = 0.0008). "Always prompt in English" did not survive the data.
-5. **NTC** ties for the top of the global format average (49.29% vs xml_pt at
+5. **When accuracy ties, cost decides.** Prompt engineering has two metrics —
+   getting it right and costing little — and this study only published the first
+   until now. Measured with `cl100k`: md_en 473 tokens/prompt, ntc 507,
+   yaml_pt 531, md_pt 537, xml_en 604, xml_pt 686. So xml_pt buys **+45% tokens**
+   for an accuracy difference of 0.04 points against NTC — statistically nothing.
+   Only two formats sit on the efficiency frontier: **ntc** (highest accuracy)
+   and **md_en** (cheapest). Everything else is dominated. The effect is sharpest
+   where instruction dominates: on VOLTGRID, ntc has the best accuracy (46.0%)
+   at 444 tokens — 2 tokens above the cheapest, while xml_pt needs 50% more to
+   score 2 points lower. Where it does not pay off: on GRID (85% raw grid data)
+   ntc costs 594 tokens against md_en's 471 with no accuracy edge to justify it.
+   Full numbers in `results/by_format_tokens.csv`.
+6. **NTC** ties for the top of the global format average (49.29% vs xml_pt at
    49.25% — one cell apart in 2,550, statistically indistinguishable). It also
    leads the per-run win count (8 of 34, vs 7 for xml_en and xml_pt), but with
    seven formats the chance expectation is ~5 wins each, so that count separates
@@ -123,7 +137,7 @@ recovered almost nothing.
    on instruction-dense prompts (XML needs up to +67% more characters for the
    same content on VOLTGRID). Six of the seven formats fall within 0.74 point;
    only yaml_en (46.24%) breaks away, and that gap does hold up (p = 0.0003).
-6. **Open-weight models arrived in force**: five open models within 4.3 points
+7. **Open-weight models arrived in force**: five open models within 4.3 points
    (Kimi K2.6 55.2 · K3 54.7 · DeepSeek v4-pro 53.0 · GLM 5.2 52.4 ·
    Qwen3.8-max 50.9), at the level of closed frontier models from ~6 months ago.
 

@@ -177,4 +177,7 @@ Every number in the case study can be recomputed from `results/per_cell.csv`
 
 ## License
 
-Prompts and result data: CC BY 4.0 — use them freely, attribution appreciated.
+Prompts and result data: **CC BY 4.0** (see [`LICENSE`](LICENSE)) — use them
+freely, including commercially, with attribution. The NTC notation itself is
+proprietary and is not part of this repository; only its results and its
+measured token cost are published here.

@@ -100,26 +100,56 @@ recovered almost nothing.
    (+20.6 pts). Opus 4.8: +8.4. No format choice in the study comes close to
    this effect. That is why rankings are published per environment.
 2. **Thinking beats everything.** Gemini 3.5 Flash-Lite: 6.5% → 48.2%
-   (+41.7 pts) just by enabling thinking. Measured effect hierarchy:
-   thinking (>40 pts) > environment (7-27) > format (median 12, range 1.3-21.3)
-   > language (1.2 aggregate, up to 12.9 on individual models).
-3. **There is no universal best format.** GPT models favor Portuguese/Markdown,
-   xAI favors XML, Moonshot favors YAML, Claude favors NTC/XML-PT. Test on
-   *your* model family.
+   (+41.7 pts) just by enabling thinking — paired McNemar over 525 cells,
+   219 discordant pairs to 0, p ≈ 2e-66. Ranked by what survives testing:
+   thinking (>40 pts) > environment (8-21 pts) > language (1.2 pts aggregate,
+   up to 12.9 on individual models) > format (no reliable separation at the top).
+3. **There is no universal best format** — and, at the top, no measurable
+   difference at all. NTC vs xml_pt: p = 1.00. NTC vs md_pt: p = 0.69.
+   Per-family tendencies exist in the data (GPT toward Portuguese/Markdown,
+   xAI toward XML, Moonshot toward YAML), but with 75 cells per format per run
+   they are leads to test on *your* model family, not settled results.
 4. **Portuguese beat English overall** on identical data: 49.01% vs
-   47.79% across the md/yaml/xml pairs, ahead in all three engineerings.
-   But the per-run scoreboard is a tie: 16 runs favored PT, 16 favored EN,
-   2 drew. PT wins on aggregate because its gains are larger, not more
-   frequent. "Always prompt in English" did not survive contact with the data.
-5. **NTC** tops the global format average (49.29%, a technical tie with
-   xml_pt at 49.25% — a single cell apart), leads per-run wins outright
-   (8 of 34 runs, ahead of xml_en and xml_pt at 7), and is the most compact
-   format on instruction-dense prompts (XML needs up to +67% more characters
-   for the same content on VOLTGRID). Six of the seven formats fall within
-   0.74 point of each other; only yaml_en (46.24%) breaks away.
+   47.79% across the md/yaml/xml pairs, ahead in all three engineerings
+   (paired McNemar, p = 0.019). But the per-run scoreboard is a tie: 16 runs
+   favored PT, 16 favored EN, 2 drew. PT wins on aggregate because its gains
+   are larger, not more frequent — the largest single case is Sonnet 5 at
+   +12.9 pts (p = 0.0008). "Always prompt in English" did not survive the data.
+5. **NTC** ties for the top of the global format average (49.29% vs xml_pt at
+   49.25% — one cell apart in 2,550, statistically indistinguishable). It also
+   leads the per-run win count (8 of 34, vs 7 for xml_en and xml_pt), but with
+   seven formats the chance expectation is ~5 wins each, so that count separates
+   nothing. Its distinctive property is compactness: the smallest of the seven
+   on instruction-dense prompts (XML needs up to +67% more characters for the
+   same content on VOLTGRID). Six of the seven formats fall within 0.74 point;
+   only yaml_en (46.24%) breaks away, and that gap does hold up (p = 0.0003).
 6. **Open-weight models arrived in force**: five open models within 4.3 points
    (Kimi K2.6 55.2 · K3 54.7 · DeepSeek v4-pro 53.0 · GLM 5.2 52.4 ·
    Qwen3.8-max 50.9), at the level of closed frontier models from ~6 months ago.
+
+## Statistical caveat (read before ranking anything)
+
+With **525 cells per run**, the 95% margin of error on an overall score is about
+**±6 points**. That means the top of the leaderboard — GPT-5.6 sol (77.5%), terra
+(73.0%), sol via API (71.2%) — is a **statistical tie**, and this dataset cannot
+separate 1st from 2nd. It separates capability *bands* (77% vs 17% is beyond
+argument), not neighbours.
+
+Two more consequences worth stating plainly:
+
+- **Max-minus-min is a noise-inflated statistic.** Simulating the null (format
+  has no effect at all), the expected spread across 7 formats is ~14.7 points at
+  75 cells and ~28 points at 25 cells. Observed spreads at or below that range
+  are not evidence of a format effect.
+- **Effects that do survive paired McNemar** on this data: thinking (p≈2e-66),
+  environment on Sonnet 5 (p<1e-6) and Opus 4.8 (p=3e-5), language on Sonnet 5
+  (p=0.0008), language in aggregate (p=0.019), and yaml_en trailing the rest
+  (p=0.0003). Format differences at the top do not (p=1.00 for NTC vs xml_pt).
+
+None of this is unique to this benchmark — a public benchmark with 120 or 500
+tasks carries a larger margin, and most never publish the number. The difference
+here is that `per_cell.csv` lets you verify every claim, including the ones that
+go against the author.
 
 ## Reproducing / citing
 

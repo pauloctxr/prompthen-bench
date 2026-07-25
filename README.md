@@ -177,7 +177,14 @@ Every number in the case study can be recomputed from `results/per_cell.csv`
 
 ## License
 
-Prompts and result data: **CC BY 4.0** (see [`LICENSE`](LICENSE)) — use them
-freely, including commercially, with attribution. The NTC notation itself is
-proprietary and is not part of this repository; only its results and its
-measured token cost are published here.
+Prompts and result data: **CC BY 4.0** (see [`LICENSE`](LICENSE)) — free to use,
+share and adapt, including commercially, with attribution.
+
+Copyright (c) 2026 Paulo Teixeira — https://ficaadica.com.br/sobre/
+
+**Scope:** the license covers `prompts/` and `results/`. It does **not** cover the
+NTC prompt engineering notation itself, which is proprietary and is not published
+in this repository — only its results and its measured token cost are.
+
+**Answer keys** are also withheld, so the benchmark stays usable against future
+models.

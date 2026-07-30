@@ -27,6 +27,13 @@ GLM 5.2 · Direct API,Direct API,yaml_en,31,75,41.3
 GLM 5.2 · Direct API,Direct API,yaml_pt,42,75,56.0
 GLM 5.2 · Direct API,Direct API,xml_en,42,75,56.0
 GLM 5.2 · Direct API,Direct API,xml_pt,42,75,56.0
+GPT-5.3 Codex Spark · Codex CLI,CLI Harness,ntc,29,75,38.7
+GPT-5.3 Codex Spark · Codex CLI,CLI Harness,md_en,25,75,33.3
+GPT-5.3 Codex Spark · Codex CLI,CLI Harness,md_pt,29,75,38.7
+GPT-5.3 Codex Spark · Codex CLI,CLI Harness,yaml_en,29,75,38.7
+GPT-5.3 Codex Spark · Codex CLI,CLI Harness,yaml_pt,24,75,32.0
+GPT-5.3 Codex Spark · Codex CLI,CLI Harness,xml_en,28,75,37.3
+GPT-5.3 Codex Spark · Codex CLI,CLI Harness,xml_pt,22,75,29.3
 GPT-5.4 mini · Codex CLI,CLI Harness,ntc,46,75,61.3
 GPT-5.4 mini · Codex CLI,CLI Harness,md_en,44,75,58.7
 GPT-5.4 mini · Codex CLI,CLI Harness,md_pt,47,75,62.7

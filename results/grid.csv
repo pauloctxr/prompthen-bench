@@ -23,13 +23,14 @@ rank,model_run,environment,correct,total,accuracy_pct
 22,Opus 4.8 · Claude Code,CLI Harness,81,175,46.3
 23,Qwen3.8-max · qwen CLI,CLI Harness,81,175,46.3
 24,GLM 5.2 · Direct API,Direct API,71,175,40.6
-25,Gemini 2.5 Pro (run 1) · Direct API,Direct API,57,175,32.6
-26,Gemini 2.5 Pro (run 2) · Direct API,Direct API,57,175,32.6
-27,Opus 4.8 · Direct API,Direct API,40,175,22.9
-28,MiniMax M3 · Direct API,Direct API,37,175,21.1
-29,Gemini 3.1 Flash-Lite · Direct API,Direct API,35,175,20.0
-30,MiniMax M3 · Claude Code,CLI Harness,28,175,16.0
-31,Haiku 4.5 · Direct API,Direct API,27,175,15.4
-32,Sonnet 5 · Direct API,Direct API,26,175,14.9
-33,Opus 4.6 · Direct API,Direct API,19,175,10.9
-34,Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,10,175,5.7
+25,GPT-5.3 Codex Spark · Codex CLI,CLI Harness,63,175,36.0
+26,Gemini 2.5 Pro (run 1) · Direct API,Direct API,57,175,32.6
+27,Gemini 2.5 Pro (run 2) · Direct API,Direct API,57,175,32.6
+28,Opus 4.8 · Direct API,Direct API,40,175,22.9
+29,MiniMax M3 · Direct API,Direct API,37,175,21.1
+30,Gemini 3.1 Flash-Lite · Direct API,Direct API,35,175,20.0
+31,MiniMax M3 · Claude Code,CLI Harness,28,175,16.0
+32,Haiku 4.5 · Direct API,Direct API,27,175,15.4
+33,Sonnet 5 · Direct API,Direct API,26,175,14.9
+34,Opus 4.6 · Direct API,Direct API,19,175,10.9
+35,Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,10,175,5.7

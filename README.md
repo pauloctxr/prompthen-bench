@@ -109,12 +109,12 @@ recovered almost nothing.
    thinking (>40 pts) > environment (8-21 pts) > language (1.2 pts aggregate,
    up to 12.9 on individual models) > format (no reliable separation at the top).
 3. **There is no universal best format** — and, at the top, no measurable
-   difference at all. NTC vs xml_pt: p = 0.76. NTC vs md_pt: p = 0.69.
+   difference at all. NTC vs xml_pt: p = 0.83. NTC vs md_pt: p = 0.64.
    Per-family tendencies exist in the data (GPT toward Portuguese/Markdown,
    xAI toward XML, Moonshot toward YAML), but with 75 cells per format per run
    they are leads to test on *your* model family, not settled results.
 4. **Portuguese beat English overall** on identical data: 48.56% vs
-   47.47% across the md/yaml/xml pairs, ahead in all three engineerings
+   47.48% across the md/yaml/xml pairs, ahead in all three engineerings
    (paired McNemar, p = 0.034). But the per-run scoreboard is essentially a
    tie: 17 runs favored PT, 17 favored EN, 2 drew. PT wins on aggregate
    because its gains are larger, not more frequent — the largest single case
@@ -139,7 +139,7 @@ recovered almost nothing.
    that count separates nothing. Its distinctive property is compactness: the
    smallest of the seven on instruction-dense prompts (XML needs up to +67%
    more characters for the same content on VOLTGRID). Six of the seven formats
-   fall within 0.88 point; only yaml_en (46.02%) breaks away, and that gap
+   fall within 0.85 point; only yaml_en (46.04%) breaks away, and that gap
    does hold up (p = 0.0004).
 7. **Open-weight models arrived in force**: five open models within 4.3 points
    (Kimi K2.6 55.2 · K3 54.7 · DeepSeek v4-pro 53.0 · GLM 5.2 52.4 ·

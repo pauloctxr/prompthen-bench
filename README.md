@@ -183,7 +183,7 @@ Every number in the case study can be recomputed from `results/per_cell.csv`
 
 > Teixeira, Paulo (Brazil). *Prompthen Bench: 18,900 evaluated AI responses,
 > 29 models, 7 prompt engineerings, 2 languages, deterministic verification.*
-> Fica a Dica, July 2026.
+> Fica a Dica, August 2026.
 > https://ficaadica.com.br/novidades/ntc-modelos-performam-melhor/
 
 ## License

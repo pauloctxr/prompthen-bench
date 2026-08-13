@@ -1,37 +1,38 @@
 rank,model_run,environment,correct,total,accuracy_pct
 1,Gemini 3.1 Pro · Direct API,Direct API,140,175,80.0
-2,GPT-5.6 sol · Codex CLI,CLI Harness,135,175,77.1
-3,Grok 4.5 · grok CLI,CLI Harness,135,175,77.1
-4,Gemini 3.5 Flash · Direct API,Direct API,132,175,75.4
-5,Gemini 3.6 Flash · Direct API,Direct API,132,175,75.4
-6,GPT-5.6 sol · Direct API,Direct API,130,175,74.3
-7,GPT-5.6 luna · Direct API,Direct API,126,175,72.0
-8,Opus 4.8 · Direct API,Direct API,124,175,70.9
-9,GPT-5.5 · Codex CLI,CLI Harness,123,175,70.3
-10,GPT-5.6 terra · Direct API,Direct API,120,175,68.6
-11,Opus 4.8 · Claude Code,CLI Harness,120,175,68.6
-12,GPT-5.6 luna · Codex CLI,CLI Harness,117,175,66.9
-13,Qwen3.8-max · qwen CLI,CLI Harness,110,175,62.9
-14,Fable 5 · Claude Code,CLI Harness,108,175,61.7
-15,GLM 5.2 · Direct API,Direct API,107,175,61.1
-16,GPT-5.6 terra · Codex CLI,CLI Harness,107,175,61.1
-17,Kimi K3 · Direct API,Direct API,107,175,61.1
-18,Gemini 3 Flash · Direct API,Direct API,103,175,58.9
-19,DeepSeek v4-pro · Direct API,Direct API,100,175,57.1
-20,GPT-5.4 mini · Codex CLI,CLI Harness,100,175,57.1
-21,Sonnet 5 · Claude Code,CLI Harness,99,175,56.6
-22,Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,94,175,53.7
-23,Sonnet 5 · Direct API,Direct API,86,175,49.1
-24,Kimi K2.6 · Direct API,Direct API,84,175,48.0
-25,Opus 4.6 · Direct API,Direct API,80,175,45.7
-26,DeepSeek v4-flash · Direct API,Direct API,76,175,43.4
-27,MiniMax M3 · Direct API,Direct API,74,175,42.3
-28,Grok 4.3 · Direct API,Direct API,67,175,38.3
-29,Kimi K2.7 · kimi CLI,CLI Harness,65,175,37.1
-30,Gemini 2.5 Pro (run 2) · Direct API,Direct API,64,175,36.6
-31,Gemini 2.5 Pro (run 1) · Direct API,Direct API,63,175,36.0
-32,GPT-5.3 Codex Spark · Codex CLI,CLI Harness,57,175,32.6
-33,MiniMax M3 · Claude Code,CLI Harness,57,175,32.6
-34,Haiku 4.5 · Direct API,Direct API,48,175,27.4
-35,Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,22,175,12.6
-36,Gemini 3.1 Flash-Lite · Direct API,Direct API,1,175,0.6
+2,Grok 4.6 · grok CLI,CLI Harness,140,175,80.0
+3,GPT-5.6 sol · Codex CLI,CLI Harness,135,175,77.1
+4,Grok 4.5 · grok CLI,CLI Harness,135,175,77.1
+5,Gemini 3.5 Flash · Direct API,Direct API,132,175,75.4
+6,Gemini 3.6 Flash · Direct API,Direct API,132,175,75.4
+7,GPT-5.6 sol · Direct API,Direct API,130,175,74.3
+8,GPT-5.6 luna · Direct API,Direct API,126,175,72.0
+9,Opus 4.8 · Direct API,Direct API,124,175,70.9
+10,GPT-5.5 · Codex CLI,CLI Harness,123,175,70.3
+11,GPT-5.6 terra · Direct API,Direct API,120,175,68.6
+12,Opus 4.8 · Claude Code,CLI Harness,120,175,68.6
+13,GPT-5.6 luna · Codex CLI,CLI Harness,117,175,66.9
+14,Qwen3.8-max · qwen CLI,CLI Harness,110,175,62.9
+15,Fable 5 · Claude Code,CLI Harness,108,175,61.7
+16,GLM 5.2 · Direct API,Direct API,107,175,61.1
+17,GPT-5.6 terra · Codex CLI,CLI Harness,107,175,61.1
+18,Kimi K3 · Direct API,Direct API,107,175,61.1
+19,Gemini 3 Flash · Direct API,Direct API,103,175,58.9
+20,DeepSeek v4-pro · Direct API,Direct API,100,175,57.1
+21,GPT-5.4 mini · Codex CLI,CLI Harness,100,175,57.1
+22,Sonnet 5 · Claude Code,CLI Harness,99,175,56.6
+23,Gemini 3.5 Flash-Lite (thinking) · Direct API,Direct API,94,175,53.7
+24,Sonnet 5 · Direct API,Direct API,86,175,49.1
+25,Kimi K2.6 · Direct API,Direct API,84,175,48.0
+26,Opus 4.6 · Direct API,Direct API,80,175,45.7
+27,DeepSeek v4-flash · Direct API,Direct API,76,175,43.4
+28,MiniMax M3 · Direct API,Direct API,74,175,42.3
+29,Grok 4.3 · Direct API,Direct API,67,175,38.3
+30,Kimi K2.7 · kimi CLI,CLI Harness,65,175,37.1
+31,Gemini 2.5 Pro (run 2) · Direct API,Direct API,64,175,36.6
+32,Gemini 2.5 Pro (run 1) · Direct API,Direct API,63,175,36.0
+33,GPT-5.3 Codex Spark · Codex CLI,CLI Harness,57,175,32.6
+34,MiniMax M3 · Claude Code,CLI Harness,57,175,32.6
+35,Haiku 4.5 · Direct API,Direct API,48,175,27.4
+36,Gemini 2.5 Flash-Lite (thinking) · Direct API,Direct API,22,175,12.6
+37,Gemini 3.1 Flash-Lite · Direct API,Direct API,1,175,0.6

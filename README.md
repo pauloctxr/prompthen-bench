@@ -4,12 +4,12 @@ An empirical benchmark measuring how **prompt engineering format**, **language**
 (English vs Portuguese), **execution environment** (Direct API vs CLI Harness)
 and **thinking configuration** affect the reasoning accuracy of AI models.
 
-- **18,900 evaluated responses** — 36 complete runs of 525 cells each · **29 distinct models** · 6 providers
+- **19,425 evaluated responses** — 37 complete runs of 525 cells each · **30 distinct models** · 6 providers
 - Deterministic verification (exact match against answer key — no human judge, no LLM judge)
 - Real cost ≈ $900 · one week of testing
 - Test window: July–August 2026 (main window concluded 2026-07-22; two paused runs
   resumed as their weekly quotas renewed — GPT-5.3 Codex Spark on 2026-07-27 and
-  Kimi K2.7 on 2026-08-11)
+  Kimi K2.7 on 2026-08-11; Grok 4.6 closed the window on 2026-08-13)
 
 Full case study (in Portuguese):
 **https://ficaadica.com.br/novidades/ntc-modelos-performam-melhor/**
@@ -30,7 +30,7 @@ Each run = 3 groups × 5 puzzles × 7 prompt formats × 5 repetitions = **525 ce
 | **VOLTGRID** | An **invented system** that does not exist anywhere on the internet: a documented spec with ONE hidden rule to infer from execution traces, then simulate. Designed to minimize training-data contamination (it did not exist before this study was published). The closest group to real-world engineering. |
 
 Difficulty is a property of the puzzle, not the group: the hardest puzzle
-(CASCADE/p2) was solved by **no model in 36 runs (0%)**; the easiest sits at ~84%.
+(CASCADE/p2) was solved by **no model in 37 runs (0%)**; the easiest sits at ~84%.
 The top overall score in the study is 77.5% — no model came close to the ceiling.
 
 ## The seven prompt formats
@@ -56,9 +56,9 @@ prompts/
   CASCADE/p0..p4/...
   VOLTGRID/p0..p4/...
 results/
-  per_cell.csv       # 18,900 rows — every single cell: run × group × puzzle ×
+  per_cell.csv       # 19,425 rows — every single cell: run × group × puzzle ×
                      #   format × language × repetition × correct (0/1)
-  overall.csv        # general ranking (36 runs, 525 cells each)
+  overall.csv        # general ranking (37 runs, 525 cells each)
   grid.csv           # ranking on the GRID group (175 cells)
   cascade.csv        # ranking on the CASCADE group (175 cells)
   voltgrid.csv       # ranking on the VOLTGRID group (175 cells)
@@ -66,7 +66,7 @@ results/
   by_format_tokens.csv # accuracy × token cost per format (cl100k), globally and
                      #   per group, with the efficiency-frontier flag
   ablation.csv       # 2,100 rows — thinking on/off ablation for the two Lite
-                     #   models (NOT part of the 36 ranked runs; see below)
+                     #   models (NOT part of the 37 ranked runs; see below)
 ```
 
 `per_cell.csv` contains the full paired data: it supports McNemar tests,
@@ -81,7 +81,7 @@ deterministic (exact match).
 ### About `ablation.csv`
 
 The thinking finding (+41.7 pts) compares the **same model** with reasoning
-enabled and disabled. The *enabled* runs are part of the 36 ranked runs and
+enabled and disabled. The *enabled* runs are part of the 37 ranked runs and
 live in `per_cell.csv`. The *disabled* runs are a configuration ablation, not
 competitors — putting them in the ranking would list the same model twice for
 a setting rather than a capability — so they are published separately here.
@@ -109,14 +109,14 @@ recovered almost nothing.
    thinking (>40 pts) > environment (8-21 pts) > language (1.2 pts aggregate,
    up to 12.9 on individual models) > format (no reliable separation at the top).
 3. **There is no universal best format** — and, at the top, no measurable
-   difference at all. NTC vs xml_pt: p = 0.83. NTC vs md_pt: p = 0.64.
+   difference at all. NTC vs xml_pt: p = 0.83. NTC vs md_pt: p = 0.67.
    Per-family tendencies exist in the data (GPT toward Portuguese/Markdown,
    xAI toward XML, Moonshot toward YAML), but with 75 cells per format per run
    they are leads to test on *your* model family, not settled results.
-4. **Portuguese beat English overall** on identical data: 48.56% vs
-   47.48% across the md/yaml/xml pairs, ahead in all three engineerings
+4. **Portuguese beat English overall** on identical data: 48.88% vs
+   47.83% across the md/yaml/xml pairs, ahead in all three engineerings
    (paired McNemar, p = 0.034). But the per-run scoreboard is essentially a
-   tie: 17 runs favored PT, 17 favored EN, 2 drew. PT wins on aggregate
+   tie: 17 runs favored PT, 17 favored EN, 3 drew. PT wins on aggregate
    because its gains are larger, not more frequent — the largest single case
    is Sonnet 5 at +12.9 pts (p = 0.0008). "Always prompt in English" did not
    survive the data.
@@ -132,19 +132,23 @@ recovered almost nothing.
    score 2 points lower. Where it does not pay off: on GRID (85% raw grid data)
    ntc costs 594 tokens against md_en's 471 with no accuracy edge to justify it.
    Full numbers in `results/by_format_tokens.csv`.
-6. **NTC** holds the top of the global format average (48.96% vs xml_pt at
-   48.74% — six cells apart in 2,700, statistically indistinguishable). It
-   also leads the per-run win count (9 of 36, vs 8 for xml_pt and 7 for
+6. **NTC** holds the top of the global format average (49.23% vs xml_pt at
+   49.01% — six cells apart in 2,775, statistically indistinguishable). It
+   also leads the per-run win count (9 of 37, vs 8 for xml_pt and 7 for
    xml_en and md_pt), but with seven formats the chance expectation is ~5 wins each, so
    that count separates nothing. Its distinctive property is compactness: the
    smallest of the seven on instruction-dense prompts (XML needs up to +67%
    more characters for the same content on VOLTGRID). Six of the seven formats
-   fall within 0.85 point; only yaml_en (46.04%) breaks away, and that gap
-   does hold up (p = 0.0004).
+   fall within 0.79 point; only yaml_en (46.52%) breaks away, and that gap
+   does hold up (p = 0.0010).
 7. **Open-weight models arrived in force**: five open models within 4.3 points
    (Kimi K2.6 55.2 · K3 54.7 · DeepSeek v4-pro 53.0 · GLM 5.2 52.4 ·
    Qwen3.8-max 50.9), at the level of closed frontier models from ~6 months ago.
-8. **Same family, different habitat.** Kimi was measured in both worlds: K2.6
+8. **Three Grok generations, same harness.** Grok 4.6 (60.2%), 4.5 (59.6%)
+   and 4.3 (40.4%) are all in the set; the first two ran inside the grok CLI,
+   which makes that pair a clean generation comparison — same tool, same
+   prompts, +0.6 pt apart. The jump from 4.3 to 4.5/4.6 is the large one.
+9. **Same family, different habitat.** Kimi was measured in both worlds: K2.6
    and K3 through the Direct API (55.2% and 54.7%), K2.7 inside its own CLI
    (48.2%). Two variables move at once there — model version and environment —
    so the gap is not a verdict on the model: it is a reading of how it performs
@@ -181,8 +185,8 @@ go against the author.
 Every number in the case study can be recomputed from `results/per_cell.csv`
 (sum `correct` by run, group or format). To cite:
 
-> Teixeira, Paulo (Brazil). *Prompthen Bench: 18,900 evaluated AI responses,
-> 29 models, 7 prompt engineerings, 2 languages, deterministic verification.*
+> Teixeira, Paulo (Brazil). *Prompthen Bench: 19,425 evaluated AI responses,
+> 30 models, 7 prompt engineerings, 2 languages, deterministic verification.*
 > Fica a Dica, August 2026.
 > https://ficaadica.com.br/novidades/ntc-modelos-performam-melhor/
 

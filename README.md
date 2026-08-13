@@ -144,10 +144,12 @@ recovered almost nothing.
 7. **Open-weight models arrived in force**: five open models within 4.3 points
    (Kimi K2.6 55.2 · K3 54.7 · DeepSeek v4-pro 53.0 · GLM 5.2 52.4 ·
    Qwen3.8-max 50.9), at the level of closed frontier models from ~6 months ago.
-8. **Three Grok generations, same harness.** Grok 4.6 (60.2%), 4.5 (59.6%)
-   and 4.3 (40.4%) are all in the set; the first two ran inside the grok CLI,
-   which makes that pair a clean generation comparison — same tool, same
-   prompts, +0.6 pt apart. The jump from 4.3 to 4.5/4.6 is the large one.
+8. **Three Grok generations.** Grok 4.6 (60.2%), 4.5 (59.6%) and 4.3 (40.4%)
+   are all in the set. The first two ran inside the grok CLI, which makes that
+   pair a clean generation comparison — same tool, same prompts, +0.6 pt apart;
+   4.3 ran through the Direct API, so it is not directly comparable to them.
+   4.6 ranks 8th overall, the best result outside the GPT-5.6 family and the
+   Gemini 3.1 Pro, and ties the CASCADE lead at 140/175.
 9. **Same family, different habitat.** Kimi was measured in both worlds: K2.6
    and K3 through the Direct API (55.2% and 54.7%), K2.7 inside its own CLI
    (48.2%). Two variables move at once there — model version and environment —
